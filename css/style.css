@@ -1,17 +1,21 @@
-.cover-black {
+/* .cover-black {
     background-color: black;
-    height: 700px ;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     display: flex;
     flex-wrap: wrap;
    
-}
+} */
 .img-container {
-   width: 500px;
-   height: 700px;
-   overflow: hidden;
+   width:100vw;
+   height: 100vh;
    background-image: url("https://images03.nicepage.com/c461c07a441a5d220e8feb1a/95c78e1f97bf5735b1d25ece/CoverStory_robots.jpg");
+   background-position: center;
    background-size: cover;
+   display: flex;
+   align-items: flex-start;
+   justify-content: center;
+   object-fit: cover;
 }
 .line-text {
    margin-top: 50px;
@@ -432,4 +436,10 @@ footer{
 .mail-icon {
    float: left;
    padding-left: 10px;
+}
+@media screen and (min-width:1140px) {
+    .img-container {
+       width: 100vw;
+       height: 100vh;
+    }
 }
